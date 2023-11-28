@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">My Cart</string>
+    <string name="textCartActivity">My Cart</string>
+    <string name="searchText">Search...</string>
+    <string name="quantity">Quantity</string>
+    <string name="sumPrice">Sum Price</string>
+    <string name="description">Den Ngu 3D Led Nhieu Mau Hinh Dep</string>
+    <string name="price">55.000</string>
+    <string name="productQuantity">3</string>
+    <string name="textTotal">Total</string>
+    <string name="defaultTotalPrice">0</string>
+</resources>

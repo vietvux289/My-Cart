@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/search_background"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:weightSum="11"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!--Product image in CartActivity-->
+        <ImageView
+            android:id="@+id/imgInCart"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="2"
+            android:padding="10dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/img_testing_product" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:orientation="vertical">
+
+            <!--Product description in CartActivity-->
+            <TextView
+                android:id="@+id/descriptionInCart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="@string/description"
+                android:textColor="@color/black" />
+
+            <!--Product price in CartActivity-->
+            <TextView
+                android:id="@+id/priceInCart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/price"
+                android:textColor="@color/red" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/areaForQuantity"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:weightSum="6">
+
+            <!--Increase button-->
+            <ImageView
+                android:id="@+id/btnIncrease"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:src="@drawable/ic_baseline_add_box_24"
+                app:tint="@color/blue_popular" />
+
+            <!--Product quantity in CartActivity-->
+            <TextView
+                android:id="@+id/tvQuantity"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="@string/productQuantity"
+                android:textColor="@color/black"
+                android:textSize="16dp" />
+
+            <!--Decrease button-->
+            <ImageView
+                android:id="@+id/btnDecrease"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:src="@drawable/ic_baseline_indeterminate_check_box_24"
+                app:tint="@color/blue_popular" />
+        </LinearLayout>
+
+        <!--Sum price of a product-->
+        <TextView
+            android:id="@+id/sumPriceTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:textColor="@color/red"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
